@@ -11,7 +11,7 @@ export default class Order extends Component {
                         <View style={{backgroundColor:'white',height:'60%',borderBottomLeftRadius:160,borderBottomRightRadius:160}}>
                                  <View>
                                      <Image>
-                                         
+                                         saddadasf
                                      </Image>
                                  </View>
                         </View>
