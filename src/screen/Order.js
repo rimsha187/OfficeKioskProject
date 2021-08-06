@@ -7,32 +7,37 @@ export default class Order extends Component {
         return (
             <View style={{backgroundColor:'black',height:'100%'}}>
             <View style={{backgroundColor:'sandybrown',height:'90%',borderBottomLeftRadius:60,borderBottomRightRadius:60}}>
-                <View style={{backgroundColor:'snow',height:'70%',borderBottomLeftRadius:60,borderBottomRightRadius:60}}>
-                        <View style={{backgroundColor:'white',height:'60%',borderBottomLeftRadius:160,borderBottomRightRadius:160}}>
+                <View style={{backgroundColor:'snow',height:'80%',borderBottomLeftRadius:60,borderBottomRightRadius:60}}>
+                        <View style={{backgroundColor:'white',height:'70%',borderBottomLeftRadius:160,borderBottomRightRadius:160}}>
                                  <View>
                                      <Image  style={styles.dp}
                                      source={require('../assets/dp.jpg')}>
                                      </Image>
                                  </View>
-                                 <View>
+                                 <View style={{flexDirection:'row',marginHorizontal:40}}>
                                      <TouchableOpacity style={{
-                    backgroundColor: 'green',
-                    borderTopRightRadius: 60,
-                    borderBottomRightRadius: 60,
-                    borderBottomLeftRadius: 60, alignItems: "center", textAlign: "center", justifyContent: "center",
-                    height: 40, width: 200,  marginStart: 30}}>
-                        <Text style={{color:'white'}}>
-                            add current location
+                    backgroundColor: 'white',
+                    borderRadius:40, alignItems: "center", textAlign: "center", justifyContent: "center",
+                    height: 40, width: 50,  marginStart: 30,marginTop:100}}>
+                        <Text style={{color:'black'}}>
+                            S
                         </Text>
                 </TouchableOpacity>
                 <TouchableOpacity style={{
-                    backgroundColor: 'green',
-                    borderTopRightRadius: 60,
-                    borderBottomRightRadius: 60,
-                    borderBottomLeftRadius: 60, alignItems: "center", textAlign: "center", justifyContent: "center",
-                    height: 40, width: 200,  marginStart: 30,marginTop:20}}>
-                        <Text style={{color:'white'}}>
-                            add custom location
+                    backgroundColor: 'white',
+                    borderRadius:40, alignItems: "center", textAlign: "center", justifyContent: "center",
+                    height: 40, width: 50,  marginStart: 30,marginTop:120}}>
+                        <Text style={{color:'black'}}>
+                           M
+                        </Text>
+
+                                     </TouchableOpacity>
+                                     <TouchableOpacity style={{
+                    backgroundColor: 'white',
+                    borderRadius:40, alignItems: "center", textAlign: "center", justifyContent: "center",
+                    height: 40, width: 50,  marginStart: 30,marginTop:100}}>
+                        <Text style={{color:'black'}}>
+                           L
                         </Text>
 
                                      </TouchableOpacity>
@@ -59,7 +64,7 @@ export default class Order extends Component {
 
 const styles = StyleSheet.create({
     dp:{ 
-        height:150,width:150,alignContent:'center',alignSelf:'center',marginTop:60
+        height:150,width:150,alignContent:'center',alignSelf:'center',marginTop:100
     },
     
 });
