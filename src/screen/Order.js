@@ -1,6 +1,6 @@
 
 import React, { Component } from 'react'
-import { Image, Text, View } from 'react-native'
+import { Image, Text, View,StyleSheet, TouchableOpacity } from 'react-native'
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons'
 export default class Order extends Component {
     render() {
@@ -10,9 +10,32 @@ export default class Order extends Component {
                 <View style={{backgroundColor:'snow',height:'70%',borderBottomLeftRadius:60,borderBottomRightRadius:60}}>
                         <View style={{backgroundColor:'white',height:'60%',borderBottomLeftRadius:160,borderBottomRightRadius:160}}>
                                  <View>
-                                     <Image>
-                                         saddadasf
+                                     <Image  style={styles.dp}
+                                     source={require('../assets/dp.jpg')}>
                                      </Image>
+                                 </View>
+                                 <View>
+                                     <TouchableOpacity style={{
+                    backgroundColor: 'green',
+                    borderTopRightRadius: 60,
+                    borderBottomRightRadius: 60,
+                    borderBottomLeftRadius: 60, alignItems: "center", textAlign: "center", justifyContent: "center",
+                    height: 40, width: 200,  marginStart: 30}}>
+                        <Text style={{color:'white'}}>
+                            add current location
+                        </Text>
+                </TouchableOpacity>
+                <TouchableOpacity style={{
+                    backgroundColor: 'green',
+                    borderTopRightRadius: 60,
+                    borderBottomRightRadius: 60,
+                    borderBottomLeftRadius: 60, alignItems: "center", textAlign: "center", justifyContent: "center",
+                    height: 40, width: 200,  marginStart: 30,marginTop:20}}>
+                        <Text style={{color:'white'}}>
+                            add custom location
+                        </Text>
+
+                                     </TouchableOpacity>
                                  </View>
                         </View>
                 <Text style={{marginStart:40,marginTop:40,fontSize:20}}>HEllo World</Text>
@@ -33,3 +56,10 @@ export default class Order extends Component {
         )
     }
 }
+
+const styles = StyleSheet.create({
+    dp:{ 
+        height:150,width:150,alignContent:'center',alignSelf:'center',marginTop:60
+    },
+    
+});
